@@ -1,2 +1,2 @@
 # SQL
-Ejercitación con SQL
+Ejercitación con SQL (de fuentes diversas)
