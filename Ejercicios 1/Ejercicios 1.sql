@@ -78,3 +78,22 @@ select nDIEmp,salemp,comisione
 from empleados
 where nDIEmp > '19.709.802';
 
+/* 15 */
+
+select nomemp, cargoe
+from empleados
+where lower(nomemp) > 'j' and lower(nomemp) < 'z'
+order by nomemp;
+
+/* 16 */
+
+select salemp,
+            comisione,
+            (salemp + comisione) as 'Salario total', 
+            ndiemp
+from empleados
+where comisione > 1000000
+order by ndiemp;
+
+
+
