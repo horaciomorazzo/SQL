@@ -95,5 +95,27 @@ from empleados
 where comisione > 1000000
 order by ndiemp;
 
+/* 17 */
+
+select salemp,
+            comisione,
+            (salemp + comisione) as 'Salario total',
+            ndiemp 
+from empleados 
+where comisione = 0 
+order by ndiemp;
+
+/* 18 */
+
+select nomEmp 
+from empleados 
+where lower(nomEmp) not like '%ma%';
+
+/* 19 */
+
+select nombreDpto 
+from departamentos 
+where lower(nombreDpto) not in ('ventas', 'investigación', 'mantenimiento');
+
 
 
